@@ -3,9 +3,9 @@ package xmltree;
 public class XMLTreeNode
 {
 
-    XMLTag tag;
-    int nodeCount = 0;
-    XMLTreeNode children[];
+    private XMLTag tag;
+    private int nodeCount = 0;
+    private XMLTreeNode children[];
 
     public XMLTreeNode(XMLTag t)
     {
@@ -41,6 +41,13 @@ public class XMLTreeNode
 
         }
 
+    }
+    
+    public XMLTag getTag()
+    {
+    	
+    	return tag;
+    	
     }
 
 }

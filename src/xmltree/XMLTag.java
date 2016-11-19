@@ -3,8 +3,8 @@ package xmltree;
 public class XMLTag
 {
 
-    String tag;
-    String value;
+    private String tag;
+    private String value;
 
     public XMLTag(String t)
     {
