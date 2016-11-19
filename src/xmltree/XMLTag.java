@@ -1,5 +1,10 @@
 package xmltree;
 
+/**
+ * Creates and Manages an XML Tag
+ * @author Tabor Kvasnicka
+ *
+ */
 public class XMLTag
 {
 
@@ -22,6 +27,10 @@ public class XMLTag
 
     }
 
+    /**
+     * Gets the name of the tag
+     * @return	the tag
+     */
     public String getTagName()
     {
 
@@ -29,6 +38,10 @@ public class XMLTag
 
     }
 
+    /**
+     * Gets the value of the tag
+     * @return	value of the tag
+     */
     public String getValue()
     {
 

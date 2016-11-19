@@ -1,5 +1,11 @@
 package xmltree;
 
+/**
+ * Creates and Manages a node in
+ * the XML Tree
+ * @author Tabor Kvasnicka
+ *
+ */
 public class XMLTreeNode
 {
 
@@ -24,6 +30,10 @@ public class XMLTreeNode
 
     }
 
+    /**
+     * Add children to the node from an array
+     * @param children	array of children
+     */
     public void addChildren(XMLTreeNode[] children)
     {
     	
@@ -32,6 +42,10 @@ public class XMLTreeNode
     	
     }
     
+    /**
+     * Add a child to the node
+     * @param child		child to add
+     */
     public void addChild(XMLTreeNode child)
     {
 
@@ -51,6 +65,11 @@ public class XMLTreeNode
 
     }
     
+    /**
+     * Finds a child of the node
+     * @param node	child to find
+     * @return		child if found, null otherwise
+     */
     public XMLTreeNode findChild(XMLTreeNode node)
     {
     	
@@ -66,6 +85,10 @@ public class XMLTreeNode
     	
     }
     
+    /**
+     * Returns the array of children
+     * @return	array of children
+     */
     public XMLTreeNode[] getChildren()
     {
     	
@@ -73,6 +96,10 @@ public class XMLTreeNode
     	
     }
     
+    /**
+     * Gets the XMLTag held in the node
+     * @return	the XMLTag
+     */
     public XMLTag getTag()
     {
     	
@@ -80,6 +107,12 @@ public class XMLTreeNode
     	
     }
     
+    /**
+     * Checks if all children of a given node
+     * are equal to the node's children
+     * @param n		the node for checking
+     * @return		true if all children are equal, false otherwise
+     */
     public boolean childrenEqual(XMLTreeNode n)
     {
     	
@@ -103,6 +136,11 @@ public class XMLTreeNode
     	
     }
     
+    /**
+     * Checks if a given node is equal to the node
+     * @return	true if equal, false otherwise
+     */
+    @Override
     public boolean equals(Object o)
     {
     	

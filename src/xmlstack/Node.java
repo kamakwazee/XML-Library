@@ -2,6 +2,11 @@ package xmlstack;
 
 import xmltree.XMLTag;
 
+/**
+ * Creates and Manages a Node in a Stack
+ * @author Tabor Kvasnicka
+ *
+ */
 public class Node 
 {
 
@@ -16,6 +21,10 @@ public class Node
 		
 	}
 	
+	/**
+	 * Sets the next node
+	 * @param next	the next node
+	 */
 	public void setNext(Node next)
 	{
 		
@@ -23,6 +32,10 @@ public class Node
 		
 	}
 	
+	/**
+	 * Gets the next node
+	 * @return	the next node
+	 */
 	public Node getNext()
 	{
 		
@@ -30,6 +43,10 @@ public class Node
 		
 	}
 	
+	/**
+	 * Gets the XMLTag of the current node
+	 * @return	the XMLTag
+	 */
 	public XMLTag getTag()
 	{
 		
